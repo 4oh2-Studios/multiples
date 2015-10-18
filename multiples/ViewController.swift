@@ -10,16 +10,28 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+    //Outlets
+    @IBOutlet weak var logo: UIImageView!
+    @IBOutlet weak var multipleInput: UITextField!
+    @IBOutlet weak var playBtn: UIButton!
+    
+    @IBOutlet weak var addBtn: UIButton!
+    @IBOutlet weak var txtLabel: UILabel!
+    
+    //Variables
+    var multiple = 0
+    var sum = 0
+    
+    
+    //Functions
+    func math() {
+        
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    func restart() {
+        
     }
-
-
+    
+    //Actions
 }
 
