@@ -50,6 +50,10 @@ class ViewController: UIViewController {
         txtLabel.text = "\(oldSum) + \(multiple) = \(newSum)"
     }
     
+    func resetTxtLabel() {
+        txtLabel.text = "Press Add to Add"
+    }
+    
     //Actions
     @IBAction func onMultPress(sender: UIButton!)  {
         if multipleInput.text != nil && multipleInput.text != "" {
@@ -63,9 +67,11 @@ class ViewController: UIViewController {
     
         multiple = Int(multipleInput.text!)!
         oldSum = 0
+        resetTxtLabel()
 
         }
     }
+    
     @IBAction func onAdd(sender: UIButton!) {
         let newSum = oldSum + multiple
         updateTxt(oldSum, mul: multiple, newSum: newSum)
@@ -75,4 +81,5 @@ class ViewController: UIViewController {
             restart()
         }
     }
+    
 }
